@@ -2,4 +2,10 @@
 - # Institución | Universidad de La Laguna
 - # Autor | Joel Francisco Escobar Socas
     - # Contacto | alu0101130408@ull.edu.es
-- # Práctica 2: Instalación y configuración de Visual Studio Code
+- # __Práctica 2: Instalación y configuración de Visual Studio Code__
+- ## Introducción
+- ## Desarrollo
+  - ### Pasos Previos
+  - ### Configuración
+- ## Dificultades Encontradas
+- ## Bibliografía
