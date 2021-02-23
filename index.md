@@ -18,7 +18,7 @@
      $ sudo snap install code --classic
      ```
     - Otra alternativa, que fue la que yo use de hecho fue desde la tienda de Software de Ubuntu:
-     ![Imagen de la herramienta de tienda](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/logo_tienda_ubuntu.png?raw=true)
+     ![Imagen de la herramienta de tienda](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/logo%20tienda.png?raw=true)
      Le damos a la "lupa" que es la herramienta de buscar y escribimos "visual studio code" 
      ![Imagen de la tienda de ubuntu](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/visual%20studio%20code.png?raw=true)
      Clickeamos encima del primero y le damos a "instalar" y se instalará automaticamente
