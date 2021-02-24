@@ -49,7 +49,29 @@
     ```
     ![imagen npm install]()
     
-  
+    Una vez instalado ejecutamos los siguientes comandos en orden:
+    ![imagen de los comandos para typescript]().
+    
+    El comando npm init --yes permite crear un fichero denominado package.json, el cual se usa para establecer las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual. 
+    Vamos a abrir la carpeta, con la opción de `File` y luego `Open folder`o bien con la combinación de `Ctrl + K`y seleccionamos "hello-word" y se abrira una pestaña donde podemos ver el contenido en la parte del explorer, si por casualidad no lo tiene abierto, lo pueden abrir con la combinación `Ctrl + B`. Si no tenía un espacio de trabajo creado previamente, se creará uno nuevo y se añadirá el directorio al mismo. Guarde el espacio de trabajo seleccionando la opción `Save Workspace As...` del menú `File`, escriba un nombre de fichero y pulse el botón OK.
+    Creamos un nuevo fichero con `Ctrl + N` y lo guardamos con `Ctrl + S`o bien podemos crearlo en el icono de una pagina con un + encima del nombre del espacio de trabajo en el explorer y le ponemos el nombre de `tsconfig.json`.
+    Y dentro del fichero escribimos las siguientes lineas
+    ```
+    [~/hello-world()]$touch tsconfig.json
+    [~/hello-world()]$cat tsconfig.json 
+    {
+      "compilerOptions": {
+      "target": "ES2018",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "module": "CommonJS"
+      }
+     }
+    ```
+
+
+    
+
    
     
     
