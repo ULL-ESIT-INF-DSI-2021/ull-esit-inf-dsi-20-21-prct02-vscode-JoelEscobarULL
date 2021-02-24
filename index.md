@@ -54,28 +54,47 @@
     
     El comando npm init --yes permite crear un fichero denominado package.json, el cual se usa para establecer las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual. 
     Vamos a abrir la carpeta, con la opción de `File` y luego `Open folder`o bien con la combinación de `Ctrl + K`y seleccionamos "hello-word" y se abrira una pestaña donde podemos ver el contenido en la parte del explorer, si por casualidad no lo tiene abierto, lo pueden abrir con la combinación `Ctrl + B`. Si no tenía un espacio de trabajo creado previamente, se creará uno nuevo y se añadirá el directorio al mismo. Guarde el espacio de trabajo seleccionando la opción `Save Workspace As...` del menú `File`, escriba un nombre de fichero y pulse el botón OK.
-    Creamos un nuevo fichero con `Ctrl + N` y lo guardamos con `Ctrl + S`o bien podemos crearlo en el icono de una pagina con un + encima del nombre del espacio de trabajo en el explorer y le ponemos el nombre de `tsconfig.json`.
-    Y dentro del fichero escribimos las siguientes lineas
+    Creamos un nuevo fichero con `Ctrl + N` y lo guardamos con `Ctrl + S`o bien podemos crearlo en el icono de una pagina con un + encima del nombre del espacio de trabajo en el explorer y le ponemos el nombre de `tsconfig.json`. o bien podemos hacer los siguientes comandos
     ```
-    [~/hello-world()]$touch tsconfig.json
-    [~/hello-world()]$cat tsconfig.json 
-    {
-      "compilerOptions": {
-      "target": "ES2018",
-      "outDir": "./dist",
-      "rootDir": "./src",
-      "module": "CommonJS"
-      }
-     }
+    $ touch tsconfig.json
+    $ vim tsconfig.json
     ```
-
-
+    Y añadimos lo siguiente:
+    ![imagen json config]()
     
-
+    Básicamente, estas opciones de configuración le indican al compilador de TypeScript que:
+    1. Queremos generar código compatible con uno de los últimos estándares de JavaScript
+    2. Que el código JavaScript producto de la compilación se almacenará en un directorio `dist`.
+    3. Que el código fuente escrito en TypeScript se encuentra en el directorio `src`.
+    4. Que se indica un estándar para cargar código desde ficheros independientes
    
+   En la terminal de Visual Studio Code (Ctrl + J) escriba los siguientes comandos:
+   ![comandos iniciales]().
+   Abrimos el fichero que acabamos de crear llamado "index.ts" y añadimos estas líneas de código en Type Script:
+   ![codigo en type script]().
+   Y lo compilamos en la terminal de VSC con el siguiente comando:
+   ```
+   $ tsc
+   ```
+   Tras la ejecución se abra creado la carpeta `dist`y el fichero index.js en el espacio de trabajo, ahora vamos a ejecutar en la terminal el siguiente comando:
+   ```
+   $ node dist/index.js
+   ```
+   Tras la ejecución obtendremos por salida de la terminal el "Hola mundo" que habiamos programado previamente con TypeScript en el espacio de trabajo
+   ![resultado_hola mundo]().
     
     
 - ## Dificultades Encontradas
-  En mi caso una dificultad que encontre fue una configuración que me olvide de linux, el cual fue modificar el ~/.ssh/config y añadir la máquina virtual al fichero, tras hacerlo queda algo así:
+  En mi caso la única dificultad que encontré fue una configuración que me olvide de linux, el cual fue modificar el ~/.ssh/config y añadir la máquina virtual al fichero, tras hacerlo queda algo así:
   (imagen ssh config)
 - ## Bibliografía
+  - [ULL](https://www.ull.es/) 
+  - [Libro Essential TypeScript](https://learning.oreilly.com/library/view/essential-typescript-from/9781484249796/html/Part_1.xhtml)
+  - [Github Pages](https://lab.github.com/githubtraining/github-pages)
+  - [Introducción a Markdown](https://guides.github.com/features/mastering-markdown/)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [Github](https://github.com/)
+  - [IaaS](https://iaas.ull.es/ovirt-engine/)
+  - [Conexión SSH Remota en Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh-tutorial)
+  - [Tutorial Extensiones en Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-gallery)
+  - [Documentación LiveShare en Visual Studio Code](https://docs.microsoft.com/en-us/visualstudio/liveshare/)
