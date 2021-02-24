@@ -40,6 +40,9 @@
     ![Imagen de hostname]().
   - ### Extensión de Live Share
     Ahora iremos a instalar la extensión de Live Share que permite compartir proyectos en tiempo real y como hicimos anteriormente nos vamos a la herramienta de "Extensions", escribimos Live Share y instalamos la primera extensión que aparece y le damos a "install".
+    Además tener en cuenta que para instalar extensiones en la máquina local, primero tendrá que desconectarse de la máquina remota. Luego, podrá instalar las mismas extensiones en la máquina remota, si fuera necesario, volviendo a conectarse a la misma.
+
+
   
     
     
