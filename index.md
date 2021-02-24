@@ -10,21 +10,40 @@
   
     Antes de comenzar con la configuración lo que haremos será instalar el Visual Studio Code (conocido también como VSC o Visual ). En mi caso ya lo tenía instalado debido a que es el editor que uso en la mayor parte de las asignaturas debido a su potencia y su comodidad a la hora de usarlo. 
     - Para descargarlo puede usar el comando 
-      ```
-      $ sudo apt install code
-      ``` 
+        ```
+        $ sudo apt install code
+        ``` 
     - También con el comando:
-     ```
-     $ sudo snap install code --classic
-     ```
+        ```
+        $ sudo snap install code --classic
+        ```
     - Otra alternativa, que fue la que yo use de hecho fue desde la tienda de Software de Ubuntu:
-     ![Imagen de la herramienta de tienda](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/logo%20tienda.png?raw=true)
-     Le damos a la "lupa" que es la herramienta de buscar y escribimos "visual studio code" 
-     ![Imagen de la tienda de ubuntu](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/visual%20studio%20code.png?raw=true)
-     Clickeamos encima del primero y le damos a "instalar" y se instalará automaticamente
+        ![Imagen de la herramienta de tienda](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/logo%20tienda.png?raw=true)
+        
+        Le damos a la "lupa" que es la herramienta de buscar y escribimos "visual studio code" 
+        ![Imagen de la tienda de ubuntu](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/visual%20studio%20code.png?raw=true)
+        
+        Clickeamos encima del primero y le damos a "instalar" y se instalará automaticamente
     
     - O por el bien desde la propia página de Visual Studio Code: [Link a la página de descarga](https://code.visualstudio.com/download)
-    
+   
   - ### Configuración
+    Una vez hayamos instalado y configurado el Visual Studio Code vamos a comenzar a aplicar la configuración de Visual Studio Code para conectarnos a nuestra máquina virtual del IaaS. Para hacerlo hay que tener en cuenta que en la práctica anterior teniamos que tener configurado el archivo `~/.ssh/config` y añadir a este archivo la máquina virtual de la asignatura, el archivo quedará al final similar a:
+    ![Imagen SSH remote]()
+    Una vez tengamos este archivo configurado en nuestra máquina local ahora tocará instalar en el Visual Studio una Extensión, Puede hacer uso de este [link](https://code.visualstudio.com/docs/editor/extension-gallery) si no sabe instalar extensiones dentro de visual studio. 
+    Nos vamos a la sección de Extensions y buscamos "SSH-Remote" una extensión que permite conectarnos a una máquina virtual  que este en el `~/.ssh/config` y le damos al botón de 'install' una vez instalado seguimos estos pasos:
+    1. Apretamos F1 en Visual Studio o bien ctrl + Shift + P.
+    2. Una vez se nos abrá el menú lo que haremos será escribir ssh y le damos a la opción de "Configure SSH Hosts..."
+    3. Seleccionamos nuestra máquina y nos conectaremos automaticamente
+    Y lo que haremos será abrir la terminal de la nueva ventana que se ha abierto, para ello bastará con teclear `Ctrl + j` y dentro de la terminal escribimos `$ Hostname` y aparecerá la máquina a la que estamos conectados. 
+    ![Imagen de hostname]().
+    
+    
+  
+   
+    
+    
 - ## Dificultades Encontradas
+  En mi caso una dificultad que encontre fue una configuración que me olvide de linux, el cual fue modificar el ~/.ssh/config y añadir la máquina virtual al fichero, tras hacerlo queda algo así:
+  (imagen ssh config)
 - ## Bibliografía
