@@ -30,14 +30,14 @@
   - ### Configuración del SSH-Remote
 
     Una vez hayamos instalado y configurado el Visual Studio Code vamos a comenzar a aplicar la configuración de Visual Studio Code para conectarnos a nuestra máquina virtual del IaaS. Para hacerlo hay que tener en cuenta que en la práctica anterior teniamos que tener configurado el archivo `~/.ssh/config` y añadir a este archivo la máquina virtual de la asignatura, el archivo quedará al final similar a:
-    ![Imagen SSH remote]()
+    ![Imagen SSH remote](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/ssh%20config%20p2.png?raw=true)
     Una vez tengamos este archivo configurado en nuestra máquina local ahora tocará instalar en el Visual Studio una Extensión, Puede hacer uso de este [link](https://code.visualstudio.com/docs/editor/extension-gallery) si no sabe instalar extensiones dentro de visual studio. 
     Nos vamos a la sección de Extensions y buscamos "SSH-Remote" una extensión que permite conectarnos a una máquina virtual  que este en el `~/.ssh/config` y le damos al botón de 'install' una vez instalado seguimos estos pasos:
     1. Apretamos F1 en Visual Studio o bien ctrl + Shift + P.
     2. Una vez se nos abrá el menú lo que haremos será escribir ssh y le damos a la opción de "Configure SSH Hosts..."
     3. Seleccionamos nuestra máquina y nos conectaremos automaticamente
     Y lo que haremos será abrir la terminal de la nueva ventana que se ha abierto, para ello bastará con teclear `Ctrl + j` y dentro de la terminal escribimos `$ Hostname` y aparecerá la máquina a la que estamos conectados. 
-    ![Imagen de hostname]().
+    ![Imagen de hostname](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/hostname%20en%20terminal.png?raw=true).
   - ### Extensión de Live Share
     Ahora iremos a instalar la extensión de Live Share que permite compartir proyectos en tiempo real y como hicimos anteriormente nos vamos a la herramienta de "Extensions", escribimos Live Share y instalamos la primera extensión que aparece y le damos a "install".
     Además tener en cuenta que para instalar extensiones en la máquina local, primero tendrá que desconectarse de la máquina remota. Luego, podrá instalar las mismas extensiones en la máquina remota, si fuera necesario, volviendo a conectarse a la misma.
@@ -47,11 +47,16 @@
     ```
     $ npm install --global typescript
     ```
-    ![imagen npm install]()
+    ![imagen npm install](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/npm%20isntall.png?raw=true)
     
     Una vez instalado ejecutamos los siguientes comandos en orden:
-    ![imagen de los comandos para typescript]().
-    
+    ```
+    $ pwd
+    $ mkdir hello-world
+    $ cd hello-world/
+    $ npm init --yes
+    $ls -lrtha
+    ```
     El comando npm init --yes permite crear un fichero denominado package.json, el cual se usa para establecer las dependencias de desarrollo y ejecución del proyecto a modo de paquetes de los que depende el proyecto actual. 
     Vamos a abrir la carpeta, con la opción de `File` y luego `Open folder`o bien con la combinación de `Ctrl + K`y seleccionamos "hello-word" y se abrira una pestaña donde podemos ver el contenido en la parte del explorer, si por casualidad no lo tiene abierto, lo pueden abrir con la combinación `Ctrl + B`. Si no tenía un espacio de trabajo creado previamente, se creará uno nuevo y se añadirá el directorio al mismo. Guarde el espacio de trabajo seleccionando la opción `Save Workspace As...` del menú `File`, escriba un nombre de fichero y pulse el botón OK.
     Creamos un nuevo fichero con `Ctrl + N` y lo guardamos con `Ctrl + S`o bien podemos crearlo en el icono de una pagina con un + encima del nombre del espacio de trabajo en el explorer y le ponemos el nombre de `tsconfig.json`. o bien podemos hacer los siguientes comandos
@@ -60,7 +65,7 @@
     $ vim tsconfig.json
     ```
     Y añadimos lo siguiente:
-    ![imagen json config]()
+    ![imagen json config](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/tsjson%20config.png?raw=true)
     
     Básicamente, estas opciones de configuración le indican al compilador de TypeScript que:
     1. Queremos generar código compatible con uno de los últimos estándares de JavaScript
@@ -69,9 +74,9 @@
     4. Que se indica un estándar para cargar código desde ficheros independientes
    
    En la terminal de Visual Studio Code (Ctrl + J) escriba los siguientes comandos:
-   ![comandos iniciales]().
+   ![comandos iniciales](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/terminal_%20comandis_inciiales.png?raw=true).
    Abrimos el fichero que acabamos de crear llamado "index.ts" y añadimos estas líneas de código en Type Script:
-   ![codigo en type script]().
+   ![codigo en type script](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/codigo%20a%20compilar.png?raw=true).
    Y lo compilamos en la terminal de VSC con el siguiente comando:
    ```
    $ tsc
@@ -81,7 +86,7 @@
    $ node dist/index.js
    ```
    Tras la ejecución obtendremos por salida de la terminal el "Hola mundo" que habiamos programado previamente con TypeScript en el espacio de trabajo
-   ![resultado_hola mundo]().
+   ![resultado_hola mundo](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct02-vscode-JoelEscobarULL/blob/main/P2_images/resultado%20de%20la%20ejecuci%C3%B3n.png?raw=true).
     
     
 - ## Dificultades Encontradas
