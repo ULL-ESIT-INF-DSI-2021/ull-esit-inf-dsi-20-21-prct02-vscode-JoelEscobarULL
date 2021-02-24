@@ -43,9 +43,11 @@
     Además tener en cuenta que para instalar extensiones en la máquina local, primero tendrá que desconectarse de la máquina remota. Luego, podrá instalar las mismas extensiones en la máquina remota, si fuera necesario, volviendo a conectarse a la misma.
 
   - ### Primer Proyecto en TypeScript
-
-  
-    
+    Antes de comenzar con el proyecto en si, lo que deberiamos hacer es instalar la extensión EsLint tal y como hemos instalados las otras extensiones, este extensión nos va a permitir realizar comprobaciones de estilo sobre ficheros que incluyan código fuente en JavaScript y TypeScript, una vez instalado, instalamos también el compilador de TypeScript usando npm con el comando:
+    ```
+    $ npm install --global typescript
+    ```
+    ![imagen npm install]()
     
   
    
