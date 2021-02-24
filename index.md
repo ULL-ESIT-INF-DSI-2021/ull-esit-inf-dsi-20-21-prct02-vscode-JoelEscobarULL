@@ -27,7 +27,8 @@
     
     - O por el bien desde la propia página de Visual Studio Code: [Link a la página de descarga](https://code.visualstudio.com/download)
    
-  - ### Configuración
+  - ### Configuración del SSH-Remote
+
     Una vez hayamos instalado y configurado el Visual Studio Code vamos a comenzar a aplicar la configuración de Visual Studio Code para conectarnos a nuestra máquina virtual del IaaS. Para hacerlo hay que tener en cuenta que en la práctica anterior teniamos que tener configurado el archivo `~/.ssh/config` y añadir a este archivo la máquina virtual de la asignatura, el archivo quedará al final similar a:
     ![Imagen SSH remote]()
     Una vez tengamos este archivo configurado en nuestra máquina local ahora tocará instalar en el Visual Studio una Extensión, Puede hacer uso de este [link](https://code.visualstudio.com/docs/editor/extension-gallery) si no sabe instalar extensiones dentro de visual studio. 
@@ -37,6 +38,9 @@
     3. Seleccionamos nuestra máquina y nos conectaremos automaticamente
     Y lo que haremos será abrir la terminal de la nueva ventana que se ha abierto, para ello bastará con teclear `Ctrl + j` y dentro de la terminal escribimos `$ Hostname` y aparecerá la máquina a la que estamos conectados. 
     ![Imagen de hostname]().
+  - ### Extensión de Live Share
+    Ahora iremos a instalar la extensión de Live Share que permite compartir proyectos en tiempo real y como hicimos anteriormente nos vamos a la herramienta de "Extensions", escribimos Live Share y instalamos la primera extensión que aparece y le damos a "install".
+  
     
     
   
