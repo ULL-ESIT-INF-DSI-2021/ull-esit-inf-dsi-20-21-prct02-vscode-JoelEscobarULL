@@ -90,8 +90,9 @@
     
     
 - ## Dificultades Encontradas
-  En mi caso la única dificultad que encontré fue una configuración que me olvide de linux, el cual fue modificar el ~/.ssh/config y añadir la máquina virtual al fichero, tras hacerlo queda algo así:
-  (imagen ssh config)
+  En mi caso la única dificultad que encontré fue una configuración que me olvide de linux, el cual fue modificar el ~/.ssh/config y añadir la máquina virtual al fichero.
+  Otra dificultad fue que las imagenes se me movieron en un inicio en Markdown, pero he podido arreglarlas
+  
 - ## Bibliografía
   - [ULL](https://www.ull.es/) 
   - [Libro Essential TypeScript](https://learning.oreilly.com/library/view/essential-typescript-from/9781484249796/html/Part_1.xhtml)
